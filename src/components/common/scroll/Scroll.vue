@@ -60,6 +60,9 @@ export default {
     //刷新scroll重新计算
     refresh() {
       this.scroll && this.scroll.refresh();
+    },
+    getScrollY() {
+      return this.scroll ? this.scroll.y : 0;
     }
   }
 };

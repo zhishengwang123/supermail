@@ -1,7 +1,7 @@
 import { request, requestFeature } from './request'
 
 export function getHomeMultidata() {
-  return requestFeature({
+  return request({
     url: '/home/multidata'
   })
 }
@@ -14,4 +14,6 @@ export function getHomeGoods(type, page) {
       page
     }
   })
+
 }
+
